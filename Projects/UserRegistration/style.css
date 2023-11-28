@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .main-container {
+    margin: 100px auto;
+    width: 50vw;
+    border: 1px solid #1d3557;
+    text-align: center;
+  }
+  
+  .main-container-error {
+    border: 1px solid red;
+  }
+  
+  .registration {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .heading {
+    font-size: 3.5em;
+    font-weight: 700;
+    color: #1d3557;
+  }
+  
+  input {
+    width: 220px;
+    font-size: 1.2em;
+    padding: 5px;
+    border-radius: 8px;
+    margin-top: 20px;
+    border: 1px solid lightgray;
+  }
+  
+  input:focus {
+    outline: none;
+    border: 1px solid #1d3557;
+  }
+  
+  #register {
+    margin: 20px auto;
+    width: 450px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    font-size: 1.2em;
+  }
+  
+  #register:hover {
+    background-color: #1d3557;
+    color: white;
+  }
+  
+  .error {
+    color: red;
+    font-family: 1em;
+  }
+  
+  .email-container,
+  .name-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .input-border-error {
+    border: 1px solid red;
+  }
+  
+  .input-border-correct {
+    border: 1px solid #99D17B;
+  }
+  
+  .btn-disabled {
+    pointer-events: none;
+  }
+  
+  .correct-input-value {
+    height: 1.4em;
+  }
+  
+  .d-none {
+    display: none;
+  }
+  
+  .info {
+    padding: 20px;
+    position: absolute;
+    top: 10px;
+    right: 40%;
+    background: #feffd4;
+    color: 1d3557;
+    text-align: center;
+    border-radius: 12px;
+  }
+  
+  .register-user-info {
+    margin: 100px auto;
+    width: 50vw;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .user-info {
+    width: 100%;
+    padding: 10px 20px;
+    background: #1d3557;
+    color: #fff;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    border-radius: 12px;
+  }
+  
+  .user-info h1 {
+    font-weight: 500;
+    font-size: 1.5em;
+    text-transform: capitalize;
+  }
