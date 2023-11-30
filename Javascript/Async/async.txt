@@ -1,0 +1,13 @@
+Javascript is a :- Default behaviour of a Javascript
+1) Synchronous -> 1 by 1 sequential execution of code
+2) & Single Threaded language -> Everything executes in a single thread.
+
+Execution Context :-
+ Exectues 1 line of code at a time [Each operation waits for last one to complete before execution]
+
+Blocking code :- 
+Block the flow of program [Read file sync]
+
+Non Blocking Code 
+Does not Block flow of program [Read file Async]
+

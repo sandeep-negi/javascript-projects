@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: cursive;
+  }
+  
+  .container {
+    width: 40vw;
+    height: 50vh;
+    margin: 100px auto;
+    text-align: center;
+  }
+  
+  #start,
+  #stop {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #0D2C54;
+    color: white;
+  }
+  
+  #start:hover,
+  #stop:hover {
+    background-color: lightgray;
+    cursor: pointer;
+  }
