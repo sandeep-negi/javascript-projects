@@ -12,13 +12,15 @@ console.log("Hitesh")
 let name = "hitesh"
 let age = 18
 let isLoggedIn = false
-let state;
+let state; // value is not assigned i.e undefined
+let address = ""; // 
+let school = null // 
 
 // number => 2 to power 53
 // bigint
 // string => ""
 // boolean => true/false
-// null => standalone value
+// null => standalone value [Representation of an Empty value]
 // undefined => 
 // symbol => unique
 
