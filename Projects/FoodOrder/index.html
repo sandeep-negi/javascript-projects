@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Food</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header></header>
+  <main>
+    <section id="order-info">
+      <div class="added-order-container d-none">
+        <div class="item-container">
+          <div class="added-items"></div>
+          <div class="added-items-price"></div>
+        </div>
+        <div class="view-cart-icon" id="cart-icon">
+          <h3>VIEW CART</h3>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart4"
+            viewBox="0 0 16 16">
+            <path
+              d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0" />
+          </svg>
+        </div>
+      </div>
+    </section>
+    <section class="hotel-name">
+      <div class="info">
+        <h1 class="info-heading">The Punjabi Rasoi</h1>
+        <div class="speciality">
+          <h4>North Indian | Muglai | Chinese</h4>
+        </div>
+        <div class="hotel-rating">
+          <div class="number-rating">
+            <h4>4.0</h4>
+            <div class="star-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="#fff" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+            </div>
+          </div>
+          <h5>6.4K ratings</h5>
+        </div>
+      </div>
+    </section>
+    <section class="menu-section">
+      <div class="item">
+        <div class="item-info">
+          <div class="selling-type">
+            <div class="square wine">
+              <div class="triangle"></div>
+            </div>
+            <h5 class="type">Bestseller</h5>
+          </div>
+          <h2 class="item-name">Dal Makhani</h2>
+          <div class="selling-ratings">
+            <div class="rating-stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-half"
+                viewBox="0 0 16 16">
+                <path
+                  d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z" />
+              </svg>
+            </div>
+            <h3 class="rating-number"> 83 ratings</h3>
+          </div>
+          <h2 class="item-price">₹255</h3>
+            <p class="item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos et sapiente, accusamus
+              culpa nobis suscipit quas fugiat magni explicabo voluptates!</p>
+
+        </div>
+        <div class="menu-image">
+          <div class="item-image makhani"></div>
+          <div class="add-item">ADD</div>
+          <div class="item-counter d-none" data-name="Dal Makhani" data-price="255">
+            <h1 class="minus">-</h1>
+            <h1 class="itemCount">1</h1>
+            <h1 class="add">+</h1>
+          </div>
+        </div>
+
+      </div>
+      <div class="item">
+        <div class="item-info">
+          <div class="selling-type">
+            <div class="square green">
+              <div class="circle"></div>
+            </div>
+            <h5 class="type">Bestseller</h5>
+          </div>
+          <h2 class="item-name">Tandoori Chicken</h2>
+          <div class="selling-ratings">
+            <div class="rating-stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-half"
+                viewBox="0 0 16 16">
+                <path
+                  d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z" />
+              </svg>
+            </div>
+            <h3 class="rating-number"> 70 ratings</h3>
+          </div>
+          <h2 class="item-price">₹285</h3>
+            <p class="item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos et sapiente, accusamus
+              culpa nobis suscipit quas fugiat magni explicabo voluptates!</p>
+
+        </div>
+        <div class="menu-image">
+          <div class="item-image tandoori"></div>
+          <div class="add-item">ADD</div>
+          <div class="item-counter d-none" data-name="Tandoori Chicken" data-price="285">
+            <h1 class="minus">-</h1>
+            <h1 class="itemCount">1</h1>
+            <h1 class="add">+</h1>
+          </div>
+        </div>
+
+      </div>
+      <div class="item">
+        <div class="item-info">
+          <div class="selling-type">
+            <div class="square green">
+              <div class="circle"></div>
+            </div>
+            <h5 class="type">Bestseller</h5>
+          </div>
+          <h2 class="item-name">Chicken Tikka Masala (spicy)</h2>
+          <div class="selling-ratings">
+            <div class="rating-stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-half"
+                viewBox="0 0 16 16">
+                <path
+                  d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z" />
+              </svg>
+            </div>
+            <h3 class="rating-number"> 39 ratings</h3>
+          </div>
+          <h2 class="item-price">₹360</h3>
+            <p class="item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos et sapiente, accusamus
+              culpa nobis suscipit quas fugiat magni explicabo voluptates!</p>
+
+        </div>
+        <div class="menu-image">
+          <div class="item-image chicken-tikka"></div>
+          <div class="add-item">ADD</div>
+          <div class="item-counter d-none" data-name="Chicken Tikka Masala" data-price="360">
+            <h1 class="minus">-</h1>
+            <h1 class="itemCount">1</h1>
+            <h1 class="add">+</h1>
+          </div>
+        </div>
+
+      </div>
+      <div class="item">
+        <div class="item-info">
+          <div class="selling-type">
+            <div class="square wine">
+              <div class="triangle"></div>
+            </div>
+          </div>
+          <h2 class="item-name">Paneer Lababdar</h2>
+          <div class="selling-ratings">
+            <div class="rating-stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-half"
+                viewBox="0 0 16 16">
+                <path
+                  d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z" />
+              </svg>
+            </div>
+            <h3 class="rating-number"> 50 ratings</h3>
+          </div>
+          <h2 class="item-price">₹335</h3>
+            <p class="item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos et sapiente, accusamus
+              culpa nobis suscipit quas fugiat magni explicabo voluptates!</p>
+
+        </div>
+        <div class="menu-image">
+          <div class="item-image paneer-lababdar"></div>
+          <div class="add-item">ADD</div>
+          <div class="item-counter d-none" data-name="Paneer Lababdar" data-price="335">
+            <h1 class="minus">-</h1>
+            <h1 class="itemCount">1</h1>
+            <h1 class="add">+</h1>
+          </div>
+        </div>
+
+      </div>
+      <div class="item">
+        <div class="item-info">
+          <div class="selling-type">
+            <div class="square wine">
+              <div class="triangle"></div>
+            </div>
+            <h5 class="type">Bestseller</h5>
+          </div>
+          <h2 class="item-name">Butter Paneer Masala</h2>
+          <div class="selling-ratings">
+            <div class="rating-stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-half"
+                viewBox="0 0 16 16">
+                <path
+                  d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z" />
+              </svg>
+            </div>
+            <h3 class="rating-number"> 60 ratings</h3>
+          </div>
+          <h2 class="item-price">₹320</h3>
+            <p class="item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos et sapiente, accusamus
+              culpa nobis suscipit quas fugiat magni explicabo voluptates!</p>
+
+        </div>
+        <div class="menu-image">
+          <div class="item-image butter-paneer"></div>
+          <div class="add-item">ADD</div>
+          <div class="item-counter d-none" data-name="Butter paneer masala" data-price="320">
+            <h1 class="minus">-</h1>
+            <h1 class="itemCount">1</h1>
+            <h1 class="add">+</h1>
+          </div>
+        </div>
+
+      </div>
+      <div class="item">
+        <div class="item-info">
+          <div class="selling-type">
+            <div class="square green">
+              <div class="circle"></div>
+            </div>
+            <h5 class="type">Bestseller</h5>
+          </div>
+          <h2 class="item-name">Butter Chicken</h2>
+          <div class="selling-ratings">
+            <div class="rating-stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-half"
+                viewBox="0 0 16 16">
+                <path
+                  d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z" />
+              </svg>
+            </div>
+            <h3 class="rating-number"> 61 ratings</h3>
+          </div>
+          <h2 class="item-price">₹360</h3>
+            <p class="item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos et sapiente, accusamus
+              culpa nobis suscipit quas fugiat magni explicabo voluptates!</p>
+
+        </div>
+        <div class="menu-image">
+          <div class="item-image butter-chicken"></div>
+          <div class="add-item">ADD</div>
+          <div class="item-counter d-none" data-name="Butter Chicken" data-price="360">
+            <h1 class="minus">-</h1>
+            <h1 class="itemCount">1</h1>
+            <h1 class="add">+</h1>
+          </div>
+        </div>
+
+      </div>
+      <div class="item">
+        <div class="item-info">
+          <div class="selling-type">
+            <div class="square green">
+              <div class="circle"></div>
+            </div>
+            <h5 class="type">Bestseller</h5>
+          </div>
+          <h2 class="item-name">Afgani Tandoori Chicken</h2>
+          <div class="selling-ratings">
+            <div class="rating-stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-half"
+                viewBox="0 0 16 16">
+                <path
+                  d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z" />
+              </svg>
+            </div>
+            <h3 class="rating-number"> 43 ratings</h3>
+          </div>
+          <h2 class="item-price">₹285</h3>
+            <p class="item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos et sapiente, accusamus
+              culpa nobis suscipit quas fugiat magni explicabo voluptates!</p>
+
+        </div>
+        <div class="menu-image">
+          <div class="item-image afgani-tandoori"></div>
+          <div class="add-item">ADD</div>
+          <div class="item-counter d-none" data-name="Afgani tandoori Chicken" data-price="285">
+            <h1 class="minus">-</h1>
+            <h1 class="itemCount">1</h1>
+            <h1 class="add">+</h1>
+          </div>
+        </div>
+
+      </div>
+      <div class="item">
+        <div class="item-info">
+          <div class="selling-type">
+            <div class="square green">
+              <div class="circle"></div>
+            </div>
+            <h5 class="type">Bestseller</h5>
+          </div>
+          <h2 class="item-name">Kadai Paneer (spicy)</h2>
+          <div class="selling-ratings">
+            <div class="rating-stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-half"
+                viewBox="0 0 16 16">
+                <path
+                  d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z" />
+              </svg>
+            </div>
+            <h3 class="rating-number"> 43 ratings</h3>
+          </div>
+          <h2 class="item-price">₹320</h3>
+            <p class="item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos et sapiente, accusamus
+              culpa nobis suscipit quas fugiat magni explicabo voluptates!</p>
+
+        </div>
+        <div class="menu-image">
+          <div class="item-image kadai-paneer"></div>
+          <div class="add-item">ADD</div>
+          <div class="item-counter d-none" data-name="Kadai Paneer" data-price="320">
+            <h1 class="minus">-</h1>
+            <h1 class="itemCount">1</h1>
+            <h1 class="add">+</h1>
+          </div>
+        </div>
+
+      </div>
+      <div class="item">
+        <div class="item-info">
+          <div class="selling-type">
+            <div class="square green">
+              <div class="circle"></div>
+            </div>
+          </div>
+          <h2 class="item-name">Paneer Tikka Masala (spicy)</h2>
+          <div class="selling-ratings">
+            <div class="rating-stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-half"
+                viewBox="0 0 16 16">
+                <path
+                  d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z" />
+              </svg>
+            </div>
+            <h3 class="rating-number"> 31 ratings</h3>
+          </div>
+          <h2 class="item-price">₹335</h3>
+            <p class="item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos et sapiente, accusamus
+              culpa nobis suscipit quas fugiat magni explicabo voluptates!</p>
+
+        </div>
+        <div class="menu-image">
+          <div class="item-image paneer-tikka"></div>
+          <div class="add-item">ADD</div>
+          <div class="item-counter d-none" data-name="Paneer tikka masala" data-price="335">
+            <h1 class="minus">-</h1>
+            <h1 class="itemCount">1</h1>
+            <h1 class="add">+</h1>
+          </div>
+        </div>
+
+      </div>
+      <div class="item">
+        <div class="item-info">
+          <div class="selling-type">
+            <div class="square green">
+              <div class="circle"></div>
+            </div>
+            <h5 class="type">Bestseller</h5>
+          </div>
+          <h2 class="item-name">Veg Kofta</h2>
+          <div class="selling-ratings">
+            <div class="rating-stars">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-fill"
+                viewBox="0 0 16 16">
+                <path
+                  d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#FFCF56" class="bi bi-star-half"
+                viewBox="0 0 16 16">
+                <path
+                  d="M5.354 5.119 7.538.792A.516.516 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.537.537 0 0 1 16 6.32a.548.548 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.52.52 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.58.58 0 0 1 .085-.302.513.513 0 0 1 .37-.245l4.898-.696zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.565.565 0 0 1 .162-.505l2.907-2.77-4.052-.576a.525.525 0 0 1-.393-.288L8.001 2.223 8 2.226v9.8z" />
+              </svg>
+            </div>
+            <h3 class="rating-number"> 26 ratings</h3>
+          </div>
+          <h2 class="item-price">₹295</h3>
+            <p class="item-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos et sapiente, accusamus
+              culpa nobis suscipit quas fugiat magni explicabo voluptates!</p>
+
+        </div>
+        <div class="menu-image">
+          <div class="item-image veg-kofta"></div>
+          <div class="add-item">ADD</div>
+          <div class="item-counter d-none" data-name="Veg Kofta" data-price="295">
+            <h1 class="minus">-</h1>
+            <h1 class="itemCount">1</h1>
+            <h1 class="add">+</h1>
+          </div>
+        </div>
+
+      </div>
+
+
+    </section>
+    <section id="bill-summary-container">
+      <div class="view-bill modal d-none">
+        <div class="bill-summary-header">
+          <h3 class="summary-heading">Bill Summary</h3>
+          <span class="close-modal" id="close-modal">X</span>
+        </div>
+        <div class="bill-info">
+        </div>
+        <div class="bill-total">
+          <span>To Pay</span>
+          <div class="total-order-amount"></div>
+        </div>
+      </div>
+    </section>
+    <section id="overlay-section">
+      <div class="overlay d-none"></div>
+    </section>
+
+  </main>
+  <footer></footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
