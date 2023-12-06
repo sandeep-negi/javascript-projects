@@ -1,430 +1,430 @@
 :root {
-    --grey: #B8BCCC;
-    --white: #fff;
-    --black: #010400;
-    --green: #60b246;
-    --light-green: #80b918;
-    --dark-green: #84a98c;
-    --light-orange: #ee9c00;
-    --yellow: #FFCF56;
-    --bright-pink: #EF5778;
-    --light-pink: #FDECF0;
-    --wine: #614252;
-    --dark-pink: #ef2b55;
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-  
-  main {
-    width: 70vw;
-    margin: 100px auto;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid var(--grey);
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
-  
-  .added-order-container {
-    width: 35vw;
-    height: 40px;
-    padding: 30px;
-    position: fixed;
-    top: 0;
-    left: 32%;
-    z-index: 999;
-    background-color: var(--green);
-    color: var(--white);
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 1em;
-    font-weight: 500;
-  }
-  
-  .item-container,
-  .view-cart-icon {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .view-cart-icon h3 {
-    font-size: 1em;
-    font-weight: 500;
-  }
-  
-  .added-items {
-    padding-right: 10px;
-    border-right: 1px solid var(--white);
-  }
-  
-  .hotel-name {
-    width: 40%;
-    margin: 40px auto 10px auto;
-    border: 1px solid var(--grey);
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
-  
-  .hotel-rating {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-  
-  .info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-    margin: 10px 0 10px 0;
-  }
-  
-  .speciality h4 {
-    font-weight: 400;
-    color: var(--grey);
-  }
-  
-  .info-heading {
-    font-size: 2.5em;
-    font-weight: 600;
-    color: var(--black);
-  }
-  
-  .number-rating {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--green);
-    color: var(--white);
-    border-radius: 6px;
-    padding: 2px 6px;
-    gap: 2px;
-  }
-  
-  .number-rating h4 {
-    font-size: 1em;
-    font-weight: 400;
-  }
-  
-  .hotel-rating h5 {
-    border-bottom: 2px dotted var(--black);
-    font-size: 1em;
-    font-weight: 300;
-  }
-  
-  .menu-section {
-    width: 100%;
-    margin: 50px auto;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 50px;
-  }
-  
-  .item {
-    width: 45%;
-    border: 1px solid var(--grey);
-    border-radius: 12px;
-    display: flex;
-    padding: 10px;
-  }
-  
-  .item-info {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    gap: 10px;
-    padding: 15px;
-  }
-  
-  .item-price {
-    font-size: 1em;
-    font-weight: 500;
-  }
-  
-  .item-name {
-    font-size: 1.5em;
-    font-weight: 500;
-  }
-  
-  .selling-ratings {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-  
-  .rating-number {
-    font-size: 0.8em;
-    font-weight: 400;
-  }
-  
-  .rating-stars {
-    display: flex;
-    align-items: center;
-    width: 100px;
-    border: 1px solid var(--yellow);
-    padding: 2px;
-    border-radius: 4px;
-  }
-  
-  .selling-type {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-  
-  .type {
-    padding: 2px 5px;
-    background-color: var(--light-orange);
-    color: var(--white);
-    border-radius: 3px;
-    font-size: 0.7em;
-    font-weight: 400;
-  }
-  
-  .square {
-    width: 20px;
-    height: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-  }
-  
-  .green {
-    border: 1px solid var(--green);
-  }
-  
-  .circle {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: var(--green);
-  }
-  
-  .triangle {
-    width: 0;
-    height: 0;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-bottom: 10px solid var(--wine);
-  }
-  
-  .wine {
-    border: 1px solid var(--wine);
-  }
-  
-  .item-desc {
-    color: var(--grey);
-  }
-  
-  .menu-image {
-    width: 50%;
-    padding: 15px;
-    position: relative;
-  }
-  
-  .item-image {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    border-radius: 12px;
-  }
-  
-  .makhani {
-    background-image: url(./assets/dmkani.jpeg);
-  }
-  
-  .tandoori {
-    background-image: url(./assets/tandoori.jpeg);
-  }
-  
-  .chicken-tikka {
-    background-image: url(./assets/chiken-tikka.jpeg);
-  }
-  
-  .paneer-lababdar {
-    background-image: url(./assets/paneerLababdar.jpeg);
-  }
-  
-  .butter-paneer {
-    background-image: url(./assets/butterpaneer.avif);
-  }
-  
-  .butter-chicken {
-    background-image: url(./assets/butterchicken.jpeg);
-  }
-  
-  .afgani-tandoori {
-    background-image: url(./assets/afganitandoori.avif);
-  }
-  
-  .kadai-paneer {
-    background-image: url(./assets/kadaipaneer.jpeg);
-  }
-  
-  .paneer-tikka {
-    background-image: url(./assets/paneer-tikka-masal.avif);
-  }
-  
-  .veg-kofta {
-    background-image: url(./assets/veg-kofta.jpeg);
-  }
-  
-  .add-item {
-    width: 50%;
-    text-align: center;
-    position: absolute;
-    left: 25%;
-    bottom: 4px;
-    z-index: 1;
-    color: var(--bright-pink);
-    background: var(--light-pink);
-    border: 0.5px solid var(--bright-pink);
-    padding: 10px 15px;
-    border-radius: 12px;
-    font-size: 1.5em;
-    font-weight: 500;
-  }
-  
-  .btn-mouseHover {
-    background-color: var(--dark-pink);
-    color: var(--white);
-  }
-  
-  .item-counter {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 50%;
-    text-align: center;
-    position: absolute;
-    left: 25%;
-    bottom: 4px;
-    z-index: 2;
-    background-color: var(--dark-pink);
-    color: var(--white);
-    border: 0.5px solid var(--bright-pink);
-    padding: 10px 15px;
-    border-radius: 12px;
-    font-size: 1em;
-    box-shadow: 0 5px 15px rgba(255, 116, 34, .85);
-  }
-  
-  .item-counter h1 {
-    font-weight: 500;
-  }
-  
-  .view-bill {
-    display: flex;
-    flex-direction: column;
-    padding: 10px 30px;
-  }
-  
-  .modal {
-    position: fixed;
-    z-index: 3;
-    width: 40vw;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0 auto;
-    opacity: 1;
-    transition: margin-top 150ms ease-out, opacity 150ms ease-out;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
-    background-color: var(--white);
-    border-radius: 12px;
-    gap: 10px;
-  }
-  
-  .d-none {
-    display: none;
-  }
-  
-  .bill-summary-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .bill-info {
-    display: flex;
-    flex-direction: column;
-    border-bottom: 1px solid var(--white);
-    gap: 2px;
-  }
-  
-  .current-item-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 5px;
-    color: var(--white);
-    background: var(--light-green);
-    padding: 10px 10px;
-    border: 1px solid var(--white);
-    border-radius: 5px;
-  }
-  
-  .current-item-row h1 {
-    font-size: 1em;
-    font-weight: 500;
-  }
-  
-  .overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(3px);
-    z-index: 2;
-  }
-  
-  .bill-total {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    background: var(--green);
-    color: var(--white);
-    border-radius: 5px;
-    font-size: 1.2em;
-    font-weight: 500;
-    margin-top: 20px;
-  }
-  
-  .close-modal {
-    padding: 5px 8px;
-    background: var(--black);
-    border-radius: 50%;
-    color: white;
-  }
-  
-  .close-modal:hover {
-    padding: 5px 8px;
-    background: var(--green);
-    color: var(--white);
-    border-radius: 50%;
-  }
-  
-  .current-item-row h1:nth-child(1) {
-    width: 60%;
-  }
+  --grey: #B8BCCC;
+  --white: #fff;
+  --black: #010400;
+  --green: #60b246;
+  --light-green: #80b918;
+  --dark-green: #84a98c;
+  --light-orange: #ee9c00;
+  --yellow: #FFCF56;
+  --bright-pink: #EF5778;
+  --light-pink: #FDECF0;
+  --wine: #614252;
+  --dark-pink: #ef2b55;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main {
+  width: 70vw;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--grey);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.added-order-container {
+  width: 35vw;
+  height: 40px;
+  padding: 30px;
+  position: fixed;
+  top: 0;
+  left: 32%;
+  z-index: 999;
+  background-color: var(--green);
+  color: var(--white);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.item-container,
+.view-cart-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.view-cart-icon h3 {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.added-items {
+  padding-right: 10px;
+  border-right: 1px solid var(--white);
+}
+
+.hotel-name {
+  width: 40%;
+  margin: 40px auto 10px auto;
+  border: 1px solid var(--grey);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.hotel-rating {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  margin: 10px 0 10px 0;
+}
+
+.speciality h4 {
+  font-weight: 400;
+  color: var(--grey);
+}
+
+.info-heading {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: var(--black);
+}
+
+.number-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--green);
+  color: var(--white);
+  border-radius: 6px;
+  padding: 2px 6px;
+  gap: 2px;
+}
+
+.number-rating h4 {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.hotel-rating h5 {
+  border-bottom: 2px dotted var(--black);
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.menu-section {
+  width: 100%;
+  margin: 50px auto;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.item {
+  width: 45%;
+  border: 1px solid var(--grey);
+  border-radius: 12px;
+  display: flex;
+  padding: 10px;
+}
+
+.item-info {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 15px;
+}
+
+.item-price {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.item-name {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.selling-ratings {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.rating-number {
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+.rating-stars {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  border: 1px solid var(--yellow);
+  padding: 2px;
+  border-radius: 4px;
+}
+
+.selling-type {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.type {
+  padding: 2px 5px;
+  background-color: var(--light-orange);
+  color: var(--white);
+  border-radius: 3px;
+  font-size: 0.7em;
+  font-weight: 400;
+}
+
+.square {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.green {
+  border: 1px solid var(--green);
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--green);
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 10px solid var(--wine);
+}
+
+.wine {
+  border: 1px solid var(--wine);
+}
+
+.item-desc {
+  color: var(--grey);
+}
+
+.menu-image {
+  width: 50%;
+  padding: 15px;
+  position: relative;
+}
+
+.item-image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+.makhani {
+  background-image: url(./assets/dmkani.jpeg);
+}
+
+.tandoori {
+  background-image: url(./assets/tandoori.jpeg);
+}
+
+.chicken-tikka {
+  background-image: url(./assets/chiken-tikka.jpeg);
+}
+
+.paneer-lababdar {
+  background-image: url(./assets/paneerLababdar.jpeg);
+}
+
+.butter-paneer {
+  background-image: url(./assets/butterpaneer.avif);
+}
+
+.butter-chicken {
+  background-image: url(./assets/butterchicken.jpeg);
+}
+
+.afgani-tandoori {
+  background-image: url(./assets/afganitandoori.avif);
+}
+
+.kadai-paneer {
+  background-image: url(./assets/kadaipaneer.jpeg);
+}
+
+.paneer-tikka {
+  background-image: url(./assets/paneer-tikka-masal.avif);
+}
+
+.veg-kofta {
+  background-image: url(./assets/veg-kofta.jpeg);
+}
+
+.add-item {
+  width: 50%;
+  text-align: center;
+  position: absolute;
+  left: 25%;
+  bottom: 4px;
+  z-index: 1;
+  color: var(--bright-pink);
+  background: var(--light-pink);
+  border: 0.5px solid var(--bright-pink);
+  padding: 10px 15px;
+  border-radius: 12px;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.btn-mouseHover {
+  background-color: var(--dark-pink);
+  color: var(--white);
+}
+
+.item-counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  text-align: center;
+  position: absolute;
+  left: 25%;
+  bottom: 4px;
+  z-index: 2;
+  background-color: var(--dark-pink);
+  color: var(--white);
+  border: 0.5px solid var(--bright-pink);
+  padding: 10px 15px;
+  border-radius: 12px;
+  font-size: 1em;
+  box-shadow: 0 5px 15px rgba(255, 116, 34, .85);
+}
+
+.item-counter h1 {
+  font-weight: 500;
+}
+
+.view-bill {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 30px;
+}
+
+.modal {
+  position: fixed;
+  z-index: 3;
+  width: 40vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  opacity: 1;
+  transition: margin-top 150ms ease-out, opacity 150ms ease-out;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.6);
+  background-color: var(--white);
+  border-radius: 12px;
+  gap: 10px;
+}
+
+.d-none {
+  display: none;
+}
+
+.bill-summary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bill-info {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid var(--white);
+  gap: 2px;
+}
+
+.current-item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  color: var(--white);
+  background: var(--light-green);
+  padding: 10px 10px;
+  border: 1px solid var(--white);
+  border-radius: 5px;
+}
+
+.current-item-row h1 {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  z-index: 2;
+}
+
+.bill-total {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: var(--green);
+  color: var(--white);
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.close-modal {
+  padding: 5px 8px;
+  background: var(--black);
+  border-radius: 50%;
+  color: white;
+}
+
+.close-modal:hover {
+  padding: 5px 8px;
+  background: var(--green);
+  color: var(--white);
+  border-radius: 50%;
+}
+
+.current-item-row h1:nth-child(1) {
+  width: 60%;
+}
