@@ -7,17 +7,14 @@ const arry = [
     
     ];
 
-const status = arry.filter((item) => {
+let status = arry.filter((item) => {
     return item.name ==='D M';
 }).length != 0;
 
 
-console.log(status);
-
 const demoPromise = new Promise((resolve, reject) => {
-    // const status = true ;
     setTimeout(() =>{
-        if(status == true){
+        if(status === true){
         console.log("data Found");
         resolve("Download Completed");
     }else{
