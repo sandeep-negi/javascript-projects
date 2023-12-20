@@ -1,0 +1,1035 @@
+/* Big Screen */
+@media(min-width:990px){
+    * {
+        margin: 0;
+        padding: 0;
+      }
+          @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Nunito+Sans:opsz,wght@6..12,200;6..12,400&family=Nunito:wght@300&display=swap');
+      
+          body {
+            font-family: 'Nunito', sans-serif;
+          }
+  .header {
+      width: 100%;
+      height: 15vh;
+      border: 1px solid lightgray;
+      /* In order to have fix header add below 5 properties*/
+      background-color: white;
+      position: fixed;
+      top: 0;
+      overflow: hidden;
+      z-index: 999;
+    }
+  
+    .header-content {
+      width: 80%;
+      margin: 20px auto;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      top: 0;
+    }
+    .menu-icon{
+      display: none;
+    }
+  
+    .header-logo {
+      display: flex;
+      cursor: pointer;
+    }
+  
+    .logo {
+      height: 80px;
+    }
+  
+    .logo-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: end;
+      text-transform: uppercase;
+    }
+  
+    .kids {
+      font-size: 28px;
+      color: #FA9DB7;
+      font-weight: 900;
+    }
+  
+    .name {
+      font-size: 16px;
+      color: #12265A;
+      font-weight: 900;
+    }
+  
+    .header-options {
+      display: flex;
+      text-transform: uppercase;
+      color: #12265A;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 40px;
+      font-size: 17px;
+    }
+  
+    .opt-1:hover,
+    .opt-2:hover,
+    .opt-3:hover,
+    .opt-4:hover {
+      /* We should not set padding at hover as 
+    it creates element shake issue on hover */
+      background-color: #FEC85A;
+      cursor: pointer;
+    }
+  
+    .opt-1,
+    .opt-2,
+    .opt-3,
+    .opt-4 {
+      padding: 6px 6px;
+      border-radius: 6px;
+    }
+  
+    .header-cart {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+      border-radius: 50%;
+      height: 40px;
+      width: 40px;
+      background-color: #FA9DB7;
+  
+      /* For creating dotted border */
+      /* border: 4px solid white;
+    outline: #FA9DB7 dashed 2px;
+    border-width: 3px; */
+    }
+  
+    .main-content {
+      width: 1470px;
+      position: relative;
+    }
+  
+    .main-img {
+      width: 1470px;
+      /* opacity: 0.5; */
+    }
+  
+    .main-info {
+      width: 700px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      position: absolute;
+      top: 350px;
+      left: 210px;
+    }
+  
+    .info-heading {
+      color: white;
+      background-color: #78C8E7;
+      padding: 6px 10px;
+      border-radius: 4px;
+      font-size: 1.5em;
+      font-weight: 900;
+    }
+  
+    .course {
+      color: #12265A;
+      font-size: 6em;
+      font-weight: 900;
+    }
+  
+    .desc {
+      line-height: 2;
+      font-size: 18px;
+      color: #767676;
+    }
+  
+    .read-more {
+      margin-top: 30px;
+      border: none;
+      padding: 16px 40px;
+      border-radius: 40px;
+      background-color: #FEC85A;
+      font-size: 18px;
+      font-weight: bolder;
+      color: white;
+      cursor: pointer;
+    }
+  
+    .dotted-read-more {
+      margin-top: 30px;
+      border: none;
+      padding: 22px 48px;
+      border-radius: 40px;
+      background-color: #FEC85A;
+      font-size: 18px;
+      font-weight: bolder;
+      color: white;
+      cursor: pointer;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+  
+    .dotted-circle {
+      border: 2px dashed #fff;
+      border-radius: 40px;
+      border-width: 3px;
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      padding: 24px 12px;
+      width: 80%;
+    }
+  
+    .dotted-btn {
+      position: relative;
+      width: 50%;
+      height: 62px;
+      margin: 40px 0;
+    }
+  
+    .dotted-btn:hover .dotted-read-more {
+      background-color: #78C8E7;
+    }
+  
+    .read-more:hover {
+      background-color: #78C8E7;
+      cursor: pointer;
+    }
+  
+    .more-container {
+      margin: 20px auto;
+      display: flex;
+      width: 1470px;
+      height: 600px;
+      background-color: #e7edfa;
+      justify-content: center;
+      align-items: center;
+      gap: 80px;
+    }
+  
+    .kids-img-container {
+      width: 560px;
+      height: 450px;
+      border-radius: 22px;
+      border: 2px dashed #FA9DB7;
+      border-width: 2px;
+      position: relative;
+    }
+  
+    .kids-fun {
+      width: 100%;
+      height: 450px;
+      border-radius: 22px;
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      z-index: 1;
+    }
+  
+    .more-info {
+      width: 400px;
+      height: 600px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 250px;
+      gap: 20px;
+    }
+  
+    .about,
+    .info-ent {
+      color: #12265A;
+      font-size: 45px;
+    }
+  
+    .curriculum {
+      width: 80%;
+      margin: 20px auto;
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 50px;
+    }
+  
+    .cmg {
+      width: 350px;
+      height: 400px;
+      border-radius: 20px;
+      background-color: #FA9DB7;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .cmg-img1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 310px;
+      height: 370px;
+    }
+  
+    .cmg:hover .cmg-img1 {
+      border-radius: 20px;
+      border: 1px dashed white;
+      border-width: 2px;
+    }
+  
+    .curriculum-img {
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+      height: 140px;
+    }
+  
+    .playground-header,
+    .entertainment-header,
+    .environment-header {
+      font-size: 28px;
+    }
+  
+    .playground-desc,
+    .entertainment-desc,
+    .environment-desc {
+      font-size: 18px;
+      line-height: 2;
+      text-align: center;
+    }
+  
+    .entertainment {
+      background-color: #78C8E7;
+      color: white;
+    }
+  
+    .environment {
+      background-color: #FEC85A;
+      color: white;
+    }
+  
+    .star-read-more {
+      font-size: 18px;
+    }
+  
+    .star {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .education {
+      width: 80%;
+      margin: 20px auto;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .education-header {
+      color: #12265A;
+      font-size: 60px;
+    }
+  
+    .education-info {
+      width: 60%;
+      margin: 60px auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+  
+    .education-desc {
+      text-align: center;
+      line-height: 2;
+      font-size: 18px;
+      color: #767676;
+    }
+  
+    .features {
+      display: flex;
+      width: 90%;
+      margin: 20px auto;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  
+    .details {
+      display: flex;
+      height: 150px;
+      width: 320px;
+      justify-content: space-between;
+      margin-bottom: 50px;
+      gap: 20px;
+    }
+  
+    .feature-img {
+      width: 100px;
+      height: 80px;
+    }
+  
+    .feature-header {
+      text-transform: capitalize;
+      font-size: 28px;
+    }
+  
+    .feature-header:hover {
+      color: #FA9DB7;
+    }
+  
+    .fea-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 15px;
+    }
+  
+    .fea-desc {
+      line-height: 2;
+      color: #767676;
+      font-size: 18px;
+    }
+  
+    .footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 200px;
+      background-color: #223568;
+      color: #8ba6f1;
+      font-size: 30px;
+      font-weight: lighter;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+  
+    .hr-school-line {
+      border: 0.5px solid #C5E9F9;
+    }
+  
+    .activity-container {
+      display: flex;
+      width: 80%;
+      margin: 20px auto;
+      height: 200px;
+      justify-content: space-evenly;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      align-items: center;
+    }
+  
+    .activity-container li {
+      list-style: none;
+    }
+  
+    .activity-container h2 {
+      font-size: 35px;
+    }
+  
+    .activity {
+      width: 200px;
+      height: 150px;
+      border: 2px dotted #FA9DB7;
+      border-width: medium;
+      border-radius: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      color: #223568;
+      text-decoration: none;
+      font-weight: bolder;
+      background-color: #F4F8FA;
+    }
+  
+    .activity:hover {
+      color: white;
+      background-color: #FA9DB7;
+    }
+  
+    .spin-border:hover {
+      animation: spin 4s linear infinite reverse;
+    }
+  
+    .spin-border {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 2px dashed #FA9DB7;
+      position: absolute;
+      z-index: 1;
+    }
+  
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+        /* Rotating the element 360 degrees */
+      }
+    }
+  
+    .happy-kids {
+      width: 410px;
+      position: relative;
+      height: 28px;
+      background-color: #F7CADC;
+    }
+  
+    .about {
+      position: absolute;
+      bottom: -3px;
+      left: 10px;
+    }
+  
+    .kids-entertainment {
+      width: 325px;
+      position: relative;
+      height: 28px;
+      background-color: #F9DFB0;
+      margin-top: 20px;
+    }
+  
+    .info-ent {
+      position: absolute;
+      bottom: 0px;
+      left: 10px;
+    }
+  
+    .edu-school {
+      width: 585px;
+      position: relative;
+      height: 28px;
+      background-color: #F7CADC;
+    }
+  
+    .about {
+      position: absolute;
+      bottom: -3px;
+      left: 10px;
+    }
+  }
+  /* small screen */
+  @media(max-width:990px) {
+  
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    
+      @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Nunito+Sans:opsz,wght@6..12,200;6..12,400&family=Nunito:wght@300&display=swap');
+    
+      body {
+        font-family: 'Nunito', sans-serif;
+      }
+    
+      .header {
+        width: 100%;
+        height: 15vh;
+        border: 1px solid lightgray;
+        /* In order to have fix header add below 5 properties*/
+        background-color: black;
+        position: fixed;
+        top: 0;
+        overflow: hidden;
+        z-index: 999;
+      }
+    
+      .header-content {
+        margin:10px 15px 10px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        top: 0;
+      }
+    
+      .header-logo {
+        display: flex;
+        cursor: pointer;
+      }
+    
+      .logo {
+        height: 80px;
+      }
+      .menu-icon {
+        max-width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+  
+      .menu-icon svg{
+        fill: #fff;
+  
+      }
+    
+      .logo-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        text-transform: uppercase;
+      }
+      .logo-info .type{
+        color:white
+      }
+    
+      .kids {
+        font-size: 28px;
+        color: #FA9DB7;
+        font-weight: 900;
+      }
+    
+      .name {
+        font-size: 16px;
+        color: #12265A;
+        font-weight: 900;
+      }
+    
+      .header-options {
+        display: none;
+      }
+  
+      .menu-icon{
+        width: 100px;
+        height: 100px;
+      }
+    
+    
+      .header-cart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        background-color: #FA9DB7;
+    
+        /* For creating dotted border */
+        /* border: 4px solid white;
+      outline: #FA9DB7 dashed 2px;
+      border-width: 3px; */
+      }
+    
+      .main-content {
+        max-width: 100%;
+        position: relative;
+      }
+    
+      .main-img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        /* opacity: 0.5; */
+      }
+    
+      .main-info {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        position: absolute;
+        top: 350px;
+        left: 40px;
+      }
+    
+      .info-heading {
+        color: white;
+        background-color: #78C8E7;
+        padding: 6px 10px;
+        border-radius: 4px;
+        font-size: 1.5em;
+        font-weight: 900;
+      }
+    
+      .course {
+        color: #12265A;
+        font-size: 6em;
+        font-weight: 900;
+      }
+    
+      .desc {
+        line-height: 2;
+        font-size: 18px;
+        color: #767676;
+      }
+    
+      .read-more {
+        margin-top: 30px;
+        border: none;
+        padding: 16px 40px;
+        border-radius: 40px;
+        background-color: #FEC85A;
+        font-size: 18px;
+        font-weight: bolder;
+        color: white;
+        cursor: pointer;
+      }
+    
+      .dotted-read-more {
+        margin-top: 30px;
+        border: none;
+        padding: 22px 48px;
+        border-radius: 40px;
+        background-color: #FEC85A;
+        font-size: 18px;
+        font-weight: bolder;
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 50%;
+      }
+    
+      .dotted-circle {
+        border: 2px dashed #fff;
+        border-radius: 40px;
+        border-width: 3px;
+        position: absolute;
+        top: 3px;
+        left: 3px;
+        padding: 24px 12px;
+        width: 48%;
+      }
+    
+      .dotted-btn {
+        position: relative;
+        width: 50%;
+        height: 62px;
+        margin: 20px 0;
+      }
+    
+      .dotted-btn:hover .dotted-read-more {
+        background-color: #78C8E7;
+      }
+    
+      .read-more:hover {
+        background-color: #78C8E7;
+        cursor: pointer;
+      }
+    
+      .more-container {
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        background-color: #e7edfa;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .kids-img-container {
+        width: 95%;
+        height: 800px;
+        border-radius: 22px;
+        border: 2px dashed #FA9DB7;
+        border-width: 2px;
+        position: relative;
+        margin-top: 50px;
+      }
+    
+      .kids-fun {
+        width: 100%;
+        height: 800px;
+        border-radius: 22px;
+        position: absolute;
+        top: 40px;
+        left: 30px;
+        z-index: 1;
+      }
+    
+      .more-info {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        gap: 20px;
+      }
+    
+      .about,
+      .info-ent {
+        color: #12265A;
+        font-size: 45px;
+      }
+    
+      .curriculum {
+        width: 80%;
+        margin: 40px auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 50px;
+        flex-direction: column;
+        gap: 30px;
+      }
+    
+      .cmg {
+        width: 90%;
+        height: 420px;
+        border-radius: 20px;
+        background-color: #FA9DB7;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .cmg-img1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 370px;
+        width: 90%;
+      }
+    
+      .cmg:hover .cmg-img1 {
+        border-radius: 20px;
+        border: 1px dashed white;
+        border-width: 2px;
+      }
+    
+      .curriculum-img {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        height: 140px;
+      }
+    
+      .playground-header,
+      .entertainment-header,
+      .environment-header {
+        font-size: 28px;
+      }
+    
+      .playground-desc,
+      .entertainment-desc,
+      .environment-desc {
+        font-size: 18px;
+        line-height: 2;
+        text-align: center;
+      }
+    
+      .entertainment {
+        background-color: #78C8E7;
+        color: white;
+      }
+    
+      .environment {
+        background-color: #FEC85A;
+        color: white;
+      }
+    
+      .star-read-more {
+        font-size: 18px;
+      }
+    
+      .star {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    
+      .education {
+        width: 80%;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .education-header {
+        color: #12265A;
+        font-size: 60px;
+      }
+    
+      .education-info {
+        width: 60%;
+        margin: 60px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+      }
+    
+      .education-desc {
+        text-align: center;
+        line-height: 2;
+        font-size: 18px;
+        color: #767676;
+      }
+    
+      .features {
+        display: flex;
+        width: 90%;
+        margin: 20px auto;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+    
+      .details {
+        display: flex;
+        height: 150px;
+        width: 320px;
+        justify-content: space-between;
+        margin-bottom: 50px;
+        gap: 20px;
+      }
+    
+      .feature-img {
+        width: 100px;
+        height: 80px;
+      }
+    
+      .feature-header {
+        text-transform: capitalize;
+        font-size: 28px;
+      }
+    
+      .feature-header:hover {
+        color: #FA9DB7;
+      }
+    
+      .fea-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 15px;
+      }
+    
+      .fea-desc {
+        line-height: 2;
+        color: #767676;
+        font-size: 18px;
+      }
+    
+      .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 200px;
+        background-color: #223568;
+        color: #8ba6f1;
+        font-size: 30px;
+        font-weight: lighter;
+        flex-direction: column;
+      }
+    
+      .hr-school-line {
+        border: 0.5px solid #C5E9F9;
+      }
+    
+      .activity-container {
+        display: flex;
+        width: 80%;
+        margin: 20px auto;
+        justify-content: space-evenly;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+    
+      .activity-container li {
+        list-style: none;
+      }
+    
+      .activity-container h2 {
+        font-size: 1.5em;
+        font-weight: 900;
+      }
+    
+      .activity {
+        width: 150px;
+        height: 120px;
+        border: 2px dotted #FA9DB7;
+        border-width: medium;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        color: #223568;
+        text-decoration: none;
+        font-weight: bolder;
+        background-color: #F4F8FA;
+      }
+    
+      .activity:hover {
+        color: white;
+        background-color: #FA9DB7;
+      }
+    
+      .spin-border:hover {
+        animation: spin 4s linear infinite reverse;
+      }
+    
+      .spin-border {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 2px dashed #FA9DB7;
+        position: absolute;
+        z-index: 1;
+      }
+    
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+          /* Rotating the element 360 degrees */
+        }
+      }
+    
+      .happy-kids {
+        width: 410px;
+        position: relative;
+        height: 28px;
+        background-color: #F7CADC;
+      }
+    
+      .about {
+        position: absolute;
+        bottom: -3px;
+        left: 10px;
+      }
+    
+      .kids-entertainment {
+        width: 325px;
+        position: relative;
+        height: 28px;
+        background-color: #F9DFB0;
+        margin-top: 20px;
+      }
+    
+      .info-ent {
+        position: absolute;
+        bottom: 0px;
+        left: 10px;
+      }
+    
+      .edu-school {
+        width: 585px;
+        position: relative;
+        height: 28px;
+        background-color: #F7CADC;
+      }
+    
+      .about {
+        position: absolute;
+        bottom: -3px;
+        left: 10px;
+      }
+  }
