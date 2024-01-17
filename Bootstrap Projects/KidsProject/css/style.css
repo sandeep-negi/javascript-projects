@@ -187,17 +187,36 @@ section {
 
 
 .header_wrapper .navbar .shopping-cart {
-  height: 3rem;
-  width: 3rem;
-  background-color: var(--bg-pink);
-  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.header_wrapper .navbar .shopping-cart::before {
+  content: '';
+  position: absolute;
+  height: 3.4rem;
+  width: 3.4rem;
+  border: 0.125rem dashed var(--text-pink);
+  border-radius: 50%;
+}
+
+.header_wrapper .navbar .shopping-cart:hover::before {
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(360deg);
+  }
 }
 
 .header_wrapper .navbar .shopping-cart i {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  padding: 0.6rem;
+  border-radius: 50%;
+  background: var(--bg-pink);
   color: var(--text-white);
 }
 
