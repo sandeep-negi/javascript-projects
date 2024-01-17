@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kids-Project-BS</title>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- Font Awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive-style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+
+  <!-- Navbar Starts -->
+  <header class="header_wrapper">
+    <nav class="navbar navbar-expand-lg fixed-top justify-content-lg-around nav-header">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center order-1 order-lg-0 me-md-5" href="#">
+          <img src="./images/logo.png" alt="" class="img-fluid">
+          <div class="site-name">
+            <h6>M4</h6>
+            <h2>kids</h2>
+          </div>
+        </a>
+        <button class="navbar-toggler order-0 order-lg-2" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+        <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 menu-navbar-nav">
+            <li class="nav-item mt-2 mt-md-0">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item mt-2 mt-lg-0">
+              <a class="nav-link" aria-current="page" href="#about">About</a>
+            </li>
+            <li class="nav-item mt-2 mt-lg-0">
+              <a class="nav-link" aria-current="page" href="#features">Features</a>
+            </li>
+            <li class="nav-item mt-2 mt-lg-0">
+              <a class="nav-link" aria-current="page" href="#services">Services</a>
+            </li>
+            <li class="nav-item mt-2 mt-lg-0">
+              <a class="nav-link" aria-current="page" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="shopping-cart order-2 order-lg-2">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <!-- Navbar Ends -->
+
+  <section id="home" class="banner_wrapper position-relative">
+    <div class="container-fluid p-0">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="banner-info">
+            <h5 class="info">The best in our school!</h5>
+            <h1 class="txt-courses">Our Courses!</h1>
+            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Sed eu dui
+              non diam eleifend
+              egestas.</p>
+            <a class="main-btn primary-btn" href="#" role="button">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner-overlay"></div>
+  </section>
+
+  <section id="about" class="about_wrapper">
+    <div class="container-fluid">
+      <div class="row align-items-start">
+        <div class="col-lg-6 col-md-12 image-container">
+          <img src="./images/children-funtime.jpeg" class="img-fluid rounded-5" alt="std-img">
+        </div>
+        <div class="col-lg-6 col-md-12 right_wrapper mt-5 my-lg-3">
+          <h2 class="txt-courses"> <span class="line-bg-warning-pink-bg">About Happy Kids</span></h2>
+          <h2 class="txt-courses"> <span class="line-bg-warning-yellow-bg">Entertainment</span></h2>
+          <!-- <h2 class="txt-courses">Entertainment</h2> -->
+          <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Sed eu dui
+            non diam eleifend
+            egestas.</p>
+          <a class="main-btn primary-btn" href="#" role="button">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="feature_wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-12 text-center ft-c">
+          <div class="card mb-4 card-bg-pink ft-card">
+            <img src="./images/playground.png" alt="" class="img-fluid mt-4">
+            <div class="card-body">
+              <h3 class="card-title">Playground</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+              <h6>Read More <i class="fa-regular fa-star"></i> </h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 text-center ft-c">
+          <div class="card mb-4 card-bg-blue ft-card">
+            <img src="./images/entertainment.png" alt="" class="img-fluid mt-4">
+            <div class="card-body">
+              <h3 class="card-title">Entertainment</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+              <h6>Read More <i class="fa-regular fa-star"></i></h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12 text-center ft-c">
+          <div class="card mb-4 card-bg-yellow ft-card">
+            <img src="./images/logo.png" alt="" class="img-fluid mt-4">
+            <div class="card-body">
+              <h3 class="card-title">Environment</h3>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+              <h6>Read More <i class="fa-regular fa-star"></i></h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services_wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2>School Education</h2>
+          <p class="services-desc m-sm-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae nihil molestias
+            necessitatibus, voluptatem recusandae eveniet vero pariatur dolorum rem eius.</p>
+
+        </div>
+      </div>
+      <div class="row mt-5 mb-5 services-info">
+        <div class="container d-md-flex flex-wrap mt-3 mx-sm-5">
+          <div class="col-lg-4 col-md-6 col text-center text-sm-center text-md-start">
+            <div class="card mb-3 px-0">
+              <div class="row g-0">
+                <div class="col-md-3 mt-2">
+                  <img src="./images/art.png" class="img-fluid rounded-start mt-3" alt="">
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body px-1">
+                    <h3 class="card-title">Art Classes</h3>
+                    <p class="card-text">This is a wider card with supporting
+                      text below as
+                      a natural lead-in to
+                      additional content.
+                      This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3
+                        mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col text-center text-sm-center text-md-start">
+            <div class="card mb-3 px-0">
+              <div class="row g-0">
+                <div class="col-md-3 mt-2">
+                  <img src="./images/languages.png" class="img-fluid rounded-start mt-3" alt="">
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body px-1">
+                    <h3 class="card-title">Education</h3>
+                    <p class="card-text">This is a wider card with supporting text below as
+                      a natural lead-in to
+                      additional content.
+                      This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3
+                        mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col text-center text-sm-center text-md-start">
+            <div class="card mb-3 px-0">
+              <div class="row g-0">
+                <div class="col-md-3 mt-2">
+                  <img src="./images/activity.png" class="img-fluid rounded-start mt-3" alt="">
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body px-1">
+                    <h3 class="card-title">Activity Room</h3>
+                    <p class="card-text">This is a wider card with supporting text below as
+                      a natural lead-in to
+                      additional content.
+                      This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3
+                        mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center text-sm-center text-md-start">
+            <div class="card mb-3 px-0">
+              <div class="row g-0">
+                <div class="col-md-3 mt-2">
+                  <img src="./images/languages.png" class="img-fluid rounded-start mt-3" alt="">
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body px-1">
+                    <h3 class="card-title">Languages</h3>
+                    <p class="card-text ">This is a wider card with supporting text below as
+                      a natural lead-in to
+                      additional content.
+                      This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3
+                        mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center text-sm-center text-md-start">
+            <div class="card mb-3 px-0">
+              <div class="row g-0">
+                <div class="col-md-3 mt-2">
+                  <img src="./images/art.png" class="img-fluid rounded-start mt-3" alt="">
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body px-1">
+                    <h3 class="card-title">Birthday Party</h3>
+                    <p class="card-text">This is a wider card with supporting text below as
+                      a natural lead-in to
+                      additional content.
+                      This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3
+                        mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 text-center text-sm-center text-md-start">
+            <div class="card mb-3 px-0">
+              <div class="row g-0">
+                <div class="col-md-3 mt-2">
+                  <img src="./images/healthyFoods.png" class="img-fluid rounded-start mt-3" alt="">
+                </div>
+                <div class="col-md-9">
+                  <div class="card-body px-1">
+                    <h3 class="card-title">Healthy Food</h3>
+                    <p class="card-text">This is a wider card with supporting text below as
+                      a natural lead-in to
+                      additional content.
+                      This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3
+                        mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact" class="contact_wrapper">
+    <div class="container-fluid">
+      <div class="row ft-content p-5">
+        <div class="col-lg-6 col1">
+          <img src="./images/MapImage.webp" class="img-fluid map-image rounded-5" alt="">
+        </div>
+        <div class="col-lg-6 col1">
+          <div class="form-content ms-lg-5 mt-5 mt-lg-0">
+            <h2>Contact me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, vitae.</p>
+
+            <input class="form-control form-control-lg form-data rounded-5" type="text" placeholder="Your name *"
+              aria-label=".form-control-lg example">
+
+            <input type="email" class="form-control form-control-lg mt-2 form-data rounded-5" id="exampleInputEmail1"
+              placeholder="Your E-mail *">
+
+            <textarea class="form-control mt-2 form-data rounded-5 p-3" placeholder="Message"
+              id="floatingTextarea"></textarea>
+            <label for="floatingTextarea"><a class="main-btn primary-btn" href="#" role="button">Post A
+                Comment</a></label>
+          </div>
+
+        </div>
+      </div>
+      <div class="row p-5">
+        <div class="col-sm-12 text-center social-icons">
+          <ul class="list-unstyled d-flex flex-column flex-sm-row justify-content-sm-center">
+            <li><a href="#"><i class="fab fa-twitter circle me-4 mb-3"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-facebook-f me-4 mb-3"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram circle me-4 mb-3"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube circle me-4"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer id="footer" class="footer_wrapper">
+    <div class="container-fluid">
+      <div class="row copyright text-center">
+        <div class="col-sm-12">
+          <h5>&copy; Copyright 2024 - All Rights Reserved</h5>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
